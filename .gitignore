@@ -1,3 +1,7 @@
+# Tus/mis ignore
+/db
+
+
 # Logs
 logs
 *.log

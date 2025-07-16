@@ -2,10 +2,11 @@ services:
   node-express:
     build:
       context: .
-    image: node-express
+    image: node-express:dev
     ports:
       - 3000:3000
     volumes:
+      - ./views:/app/views
       - citasdb:/app/db
     command: node app.js
 

@@ -78,6 +78,7 @@
           </div>
         </div>
       </div>
+      <!-- Los datos de usuario se muestran usando <%= ... %> para evitar XSS -->
       <ul class="list-group mb-4">
         <% comentarios.forEach(function(comentario) { %>
         <li class="list-group-item">

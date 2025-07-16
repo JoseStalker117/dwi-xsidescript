@@ -15,6 +15,7 @@
   <body class="bg-light">
     <a href="/" class="btn btn-link mt-4">Volver</a>
     <div class="container py-5">
+      <!-- Los datos de usuario se muestran usando <%= ... %> para evitar XSS -->
       <h1 class="mb-4 text-success">Resultados para "<%= autor %>"</h1>
       <ul class="list-group">
         <% resultados.forEach(function(comentario) { %>

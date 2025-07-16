@@ -1,0 +1,13 @@
+services:
+  node-express:
+    build:
+      context: .
+    image: node-express
+    ports:
+      - 3000:3000
+    volumes:
+      - citasdb:/app/db
+    command: node app.js
+
+volumes:
+  citasdb:
